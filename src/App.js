@@ -1,9 +1,19 @@
-import React from 'react';
+import React from "react";
+
+// Componentes
+import Header from "./components/Header";
+import AgregarCita from "./components/AgregarCita";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="container">
+      	<Header titulo="Citas Veterinarias" />
+		<div className="row">
+				<div className="col-md-6">
+					<AgregarCita />
+				</div>
+				<div className="col-md-6"></div>
+		</div>
     </div>
   );
 }
